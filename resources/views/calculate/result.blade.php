@@ -157,7 +157,7 @@
                                 <ul style="margin-left: 0;">
                                     @foreach($retails as $retail)
                                         <li>
-                                            {{ $retail->label."(".GetDrivingDistance($lat_DC, $retail->latitude, $long_DC, $retail->longitude)['distance'].")" }}
+                                            {{ $retail->label }}
                                         </li>
                                     @endforeach
                                 </ul>

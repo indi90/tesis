@@ -38,7 +38,7 @@
                                         <ul>
                                             @foreach($history->retails as $retail)
                                                 <li>
-                                                    {{ $retail->label."(".GetDrivingDistance($history->latitude, $retail->latitude, $history->longitude, $retail->longitude)['distance'].")" }}
+                                                    {{ $retail->label }}
                                                 </li>
                                             @endforeach
                                         </ul>
