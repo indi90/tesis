@@ -54,7 +54,7 @@ class CalculateController extends Controller
         if ($sum_rice <= $request->rice and $sum_rice <= $request->rice and $sum_oil <= $request->cooking_oil){
             $retails = Retail::whereIn('id', $request->retails)->get();
 
-            dd($this->transportation_cost($request)['total_distance']);
+//            dd($this->transportation_cost($request)['total_distance']);
 
             $history = Auth::user()->histories()->create([
                 'development_cost'      => $this->development_cost($request),
